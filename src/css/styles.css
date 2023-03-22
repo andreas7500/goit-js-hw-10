@@ -26,8 +26,6 @@ body {
 
 ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 img {
   display: block;
@@ -52,6 +50,7 @@ h1 {
 p {
   font-size: 22px;
   font-weight: 500;
+  margin-right: 10px;
 }
 
 li {
