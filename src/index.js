@@ -49,6 +49,7 @@ function onFormData(e) {
 
         Notify.failure('Oops, there is no country with that name');
         form.value = '';
+        console.log(error);
       }
     });
 
