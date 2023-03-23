@@ -43,7 +43,14 @@ function onFormData(e) {
         );
       }
     })
-    .catch(() => Notify.failure('Oops, there is no country with that name'));
+    .catch(error => {
+      if ((error.message = 404)) {
+        clearMarkUp();
+
+        Notify.failure('Oops, there is no country with that name');
+        form.value = '';
+      }
+    });
 
   function clearMarkUp() {
     countryList.innerHTML = '';
